@@ -5298,6 +5298,9 @@ GameObject:
   - component: {fileID: 6086112860203396274}
   - component: {fileID: 3751019335978992130}
   - component: {fileID: 4543713347538846168}
+  - component: {fileID: -7111468257844366788}
+  - component: {fileID: -817134531492101470}
+  - component: {fileID: 4854314705540605540}
   m_Layer: 0
   m_Name: MovingRidgeback
   m_TagString: Untagged
@@ -5391,6 +5394,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!65 &-7111468257844366788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8100396197005559531}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.09, y: 0.2, z: 0.26}
+  m_Center: {x: 0, y: 0.1, z: 0.03}
+--- !u!114 &-817134531492101470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8100396197005559531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d48fa6aeb35c74c94ad674b00fb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4854314705540605540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8100396197005559531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561bc73a084d13e4d9308e9e0e438663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   topBound: 30
   bottomBound: -20
 --- !u!1 &8100406754498566389
