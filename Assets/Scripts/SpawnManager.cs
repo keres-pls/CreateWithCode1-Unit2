@@ -29,13 +29,9 @@ public class SpawnManager : MonoBehaviour
 
     private void Start()
     {
-        int animalIndex = Random.Range(0, animalPrefabs.Length);
-        float xPos = Random.Range(xRange * -1, xRange);
-        Vector3 spawnPos = new Vector3(xPos, transform.position.y, transform.position.z);
-        GameObject.Instantiate(animalPrefabs[animalIndex], spawnPos, transform.rotation);
+        SpawnAnimal();
         
     }
-
 
     void Update()
     {
@@ -47,12 +43,16 @@ public class SpawnManager : MonoBehaviour
         {
             delayCounter = 0.0f;
             spawnRateFuzz = Random.Range(spawnRateMaxFuzz * -1, spawnRateMaxFuzz);
-            int animalIndex = Random.Range(0, animalPrefabs.Length);
-            float xPos = Random.Range(xRange * -1, xRange);
-            Vector3 spawnPos = new Vector3(xPos, transform.position.y, transform.position.z);
-            GameObject.Instantiate(animalPrefabs[animalIndex], spawnPos, transform.rotation);
-            
+            SpawnAnimal();  
         }
         
+    }
+
+    private void SpawnAnimal()
+    {
+        int animalIndex = Random.Range(0, animalPrefabs.Length);
+        float xPos = Random.Range(xRange * -1, xRange);
+        Vector3 spawnPos = new Vector3(xPos, transform.position.y, transform.position.z);
+        GameObject.Instantiate(animalPrefabs[animalIndex], spawnPos, transform.rotation);
     }
 }
